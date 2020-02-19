@@ -3,7 +3,7 @@ var https = require("https");
 var app = express();
 
 
-// var auth = require('./auth');
+var port = process.env.PORT || 8080;
 
 // Based on yyx990803/starz https://github.com/yyx990803/starz
 
@@ -74,6 +74,6 @@ app.get("/user/:username", function(req, res) {
   });
 });
 
-app.listen(80, function() {
-  console.log("GitHub StarCounter listening on port 80!");
+app.listen(port, function() {
+  console.log("GitHub StarCounter listening on port " + port);
 });
