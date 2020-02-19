@@ -14,7 +14,7 @@ Moreover, you can combined it with [shields.io](https://shields.io/) to produce 
 
 ![](https://img.shields.io/badge/dynamic/json?label=GitHub%20Total%20Stars&query=%24.stars&url=https%3A%2F%2Fgithub-star-counter.herokuapp.com%2Fuser%2Fidealclover)
 
-![](https://img.shields.io/badge/dynamic/json?label=GitHub%20Total%Forks&query=%24.forks&url=https%3A%2F%2Fgithub-star-counter.herokuapp.com%2Fuser%2Fidealclover)
+![](https://img.shields.io/badge/dynamic/json?label=GitHub%20Total%20Forks&query=%24.forks&url=https%3A%2F%2Fgithub-star-counter.herokuapp.com%2Fuser%2Fidealclover)
 
 ## Deploy
 
