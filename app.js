@@ -74,6 +74,6 @@ app.get("/user/:username", function(req, res) {
   });
 });
 
-app.listen(3000, function() {
-  console.log("GitHub StarCounter listening on port 3000!");
+app.listen(80, function() {
+  console.log("GitHub StarCounter listening on port 80!");
 });
