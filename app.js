@@ -37,7 +37,7 @@ function request(url) {
 
 function getRepos(user, page) {
   return new Promise(function(resolve, reject) {
-    let url = "/users/" + user + "/repos?per_page=10&page=" + page;
+    let url = "/users/" + user + "/repos?per_page=100&page=" + page;
     request(url).then(function(datas) {
       let rst = {
         forks: 0,
@@ -58,7 +58,7 @@ app.get("/user/:username", function(req, res) {
   let url = "/users/" + user;
   request(url).then(function(datas) {
     console.log(datas);
-    let pages = Math.ceil(datas.public_repos / 10);
+    let pages = Math.ceil(datas.public_repos / 100);
     let rst = {
       forks: 0,
       stars: 0
