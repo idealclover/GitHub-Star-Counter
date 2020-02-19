@@ -1,0 +1,13 @@
+{
+    "name": "GitHub-Star-Counter",
+    "description": "API to count a GitHub user's total stars",
+    "repository": "https://github.com/idealclover/GitHub-Star-Counter/",
+    "keywords": ["github"],
+    "env": {
+      "auth": {
+        "description": "GitHub auth code to increase the API rate limit, https://github.com/settings/tokens",
+        "value": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "required": false
+      }
+    }
+  }
