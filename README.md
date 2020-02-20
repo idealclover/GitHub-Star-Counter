@@ -18,9 +18,9 @@ Moreover, you can combined it with [shields.io](https://shields.io/) to produce 
 
 Sometimes due to slow network, the pictures above could not show correctly, here are the static version:
 
-![](https://github.com/idealclover/GitHub-Star-Counter/raw/master/assets/pic1.svg)
+![](https://github.com/idealclover/GitHub-Star-Counter/raw/master/assets/pic1.svg?sanitize=true)
 
-![](https://github.com/idealclover/GitHub-Star-Counter/raw/master/assets/pic2.svg)
+![](https://github.com/idealclover/GitHub-Star-Counter/raw/master/assets/pic2.svg?sanitize=true)
 
 ## Deploy
 
