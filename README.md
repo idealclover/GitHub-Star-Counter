@@ -16,6 +16,12 @@ Moreover, you can combined it with [shields.io](https://shields.io/) to produce 
 
 ![](https://img.shields.io/badge/dynamic/json?label=GitHub%20Total%20Forks&query=%24.forks&url=https%3A%2F%2Fgithub-star-counter.herokuapp.com%2Fuser%2Fidealclover)
 
+Sometimes due to slow network, the pictures above could not show correctly, here are the static version:
+
+![](https://github.com/idealclover/GitHub-Star-Counter/raw/master/assets/pic1.svg)
+
+![](https://github.com/idealclover/GitHub-Star-Counter/raw/master/assets/pic2.svg)
+
 ## Deploy
 
 You can easily deploy it yourself.
