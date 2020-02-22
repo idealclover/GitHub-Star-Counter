@@ -16,7 +16,7 @@ function request(url) {
     path: url,
     headers: {
       "User-Agent": "GitHub StarCounter",
-      "auth": auth
+      "Authorization": "token " + auth
     }
   };
   return new Promise(function(resolve, reject) {
