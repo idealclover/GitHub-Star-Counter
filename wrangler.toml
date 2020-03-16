@@ -1,0 +1,12 @@
+name = "api-dev"
+type = "webpack"
+account_id = "daab548c5b0d4e1b8f6482c27b7f4540"
+workers_dev = true
+zone_id = ""
+webpack_config = "webpack.config.js"
+
+[env.staging]
+name = "my-worker-staging"
+
+[env.production]
+name = "api"
