@@ -1,6 +1,6 @@
 name = "api-dev"
 type = "webpack"
-account_id = "daab548c5b0d4e1b8f6482c27b7f4540"
+account_id = "3ea01693f23309397d4b82c5e57b0e40"
 workers_dev = true
 zone_id = ""
 webpack_config = "webpack.config.js"
