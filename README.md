@@ -1,37 +1,43 @@
-# ʕ •́؈•̀) GitHub star counter using cloudflare worker
+# GitHub-Star-Counter
 
-GitHub star counter on cloudflare worker. Just a copy of https://github.com/idealclover/GitHub-Star-Counter
+> ✨ City of stars, are you shining just for me?
 
-## 🔋 Getting Started
+## What Is It
 
-This template is meant to be used with [Wrangler](https://github.com/cloudflare/wrangler). If you are not already familiar with the tool, we recommend that you install the tool and configure it to work with your [Cloudflare account](https://dash.cloudflare.com). Documentation can be found [here](https://developers.cloudflare.com/workers/tooling/wrangler/).
+An API to count a GitHub user's total stars.
 
-To generate using Wrangler, run this command:
+> /user/:username - to show a user's total stars and forks of is repositories.
 
-```bash
-wrangler generate my-ts-project https://github.com/cloudflare/workers-typescript-template
-```
+For example: [https://github-star-counter.herokuapp.com/user/idealclover](https://github-star-counter.herokuapp.com/user/idealclover)
 
-### 👩 💻 Developing
+Moreover, you can combined it with [shields.io](https://shields.io/) to produce a badge like this:
 
-[`src/index.js`](./src/index.ts) calls the request handler in [`src/handler.ts`](./src/handler.ts), and will return the [request method](https://developer.mozilla.org/en-US/docs/Web/API/Request/method) for the given request.
+![](https://img.shields.io/badge/dynamic/json?logo=github&label=GitHub%20Stars&style=for-the-badge&query=%24.stars&url=https%3A%2F%2Fgithub-star-counter.herokuapp.com%2Fuser%2Fidealclover)
 
-### 🧪 Testing
+![](https://img.shields.io/badge/dynamic/json?logo=github&label=GitHub%20Forks&style=for-the-badge&query=%24.forks&url=https%3A%2F%2Fgithub-star-counter.herokuapp.com%2Fuser%2Fidealclover)
 
-This template comes with mocha tests which simply test that the request handler can handle each request method. `npm test` will run your tests.
+Sometimes due to slow network, the pictures above could not show correctly, here are the static version:
 
-### ✏️ Formatting
+![](https://github.com/idealclover/GitHub-Star-Counter/raw/master/assets/pic1.svg?sanitize=true)
 
-This template uses [`prettier`](https://prettier.io/) to format the project. To invoke, run `npm run format`.
+![](https://github.com/idealclover/GitHub-Star-Counter/raw/master/assets/pic2.svg?sanitize=true)
 
-### 👀 Previewing and Publishing
+## Deploy
 
-For information on how to preview and publish your worker, please see the [Wrangler docs](https://developers.cloudflare.com/workers/tooling/wrangler/commands/#publish).
+### On Heroku
 
-## 🤢 Issues
+In order to increase the API rate limit, you can register GitHub auth code [here](https://github.com/settings/tokens)
 
-If you run into issues with this specific project, please feel free to file an issue [here](https://github.com/cloudflare/workers-typescript-template/issues). If the problem is with Wrangler, please file an issue [here](https://github.com/cloudflare/wrangler/issues).
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/idealclover/GitHub-Star-Counter/tree/heroku)
 
-## ⚠️ Caveats
+### On Cloudflare Worker
 
-The `service-worker-mock` used by the tests is not a perfect representation of the Cloudflare Workers runtime. It is a general approximation. We recommend that you test end to end with `wrangler dev` in addition to a [staging environment](https://developers.cloudflare.com/workers/tooling/wrangler/configuration/environments/) to test things before deploying.
+This is a serverless function deployed on Cloudflare Workers. Please check: [Quick Start | Cloudflare Workers](https://developers.cloudflare.com/workers/quickstart) if you want to deploy or contribute.
+
+## LICENSE
+
+Inspired by [yyx990803/starz](https://github.com/yyx990803/starz).
+
+Thanks for strong support by [fengkx](https://github.com/fengkx)!
+
+MIT LICENSE. Have fun.
