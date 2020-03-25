@@ -26,7 +26,7 @@ jobs:
   release:
     needs: build
     runs-on: ubuntu-latest
-    setps:
+    steps:
       - uses: actions/checkout@master
       - name: Publish to !production!
         uses: cloudflare/wrangler-action@1.1.0
