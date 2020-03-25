@@ -4,16 +4,12 @@
 name: Node.js CI
 
 on:
-  push:
-    branches: [ worker-dev ]
   pull_request:
     branches: [ worker-dev ]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [10.x, 12.x, 13.x]
@@ -21,7 +17,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        - ref: 'work-dev'
+        ref: 'worker-dev'
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
@@ -31,4 +27,3 @@ jobs:
     - run: npm test
       env:
         CI: true
-
