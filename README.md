@@ -8,13 +8,15 @@ An API to count a GitHub user's total stars.
 
 > /user/:username - to show a user's total stars and forks of is repositories.
 
-For example: [https://github-star-counter.herokuapp.com/user/idealclover](https://github-star-counter.herokuapp.com/user/idealclover)
+For example: [https://api.github-star-counter.workers.dev/user/idealclover](https://api.github-star-counter.workers.dev/user/idealclover)
+
+Heroku version: [https://github-star-counter.herokuapp.com/user/idealclover](https://github-star-counter.herokuapp.com/user/idealclover)
 
 Moreover, you can combined it with [shields.io](https://shields.io/) to produce a badge like this:
 
-![](https://img.shields.io/badge/dynamic/json?logo=github&label=GitHub%20Stars&style=for-the-badge&query=%24.stars&url=https%3A%2F%2Fgithub-star-counter.herokuapp.com%2Fuser%2Fidealclover)
+![](https://img.shields.io/badge/dynamic/json?logo=github&label=GitHub%20Stars&style=for-the-badge&query=%24.stars&url=https://api.github-star-counter.workers.dev/user/idealclover)
 
-![](https://img.shields.io/badge/dynamic/json?logo=github&label=GitHub%20Forks&style=for-the-badge&query=%24.forks&url=https%3A%2F%2Fgithub-star-counter.herokuapp.com%2Fuser%2Fidealclover)
+![](https://img.shields.io/badge/dynamic/json?logo=github&label=GitHub%20Forks&style=for-the-badge&query=%24.forks&url=https://api.github-star-counter.workers.dev/user/idealclover)
 
 Sometimes due to slow network, the pictures above could not show correctly, here are the static version:
 
