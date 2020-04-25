@@ -1,7 +1,7 @@
 {
-  "name": "github-star-counter-cloudflare-worker",
-  "version": "1.0.0",
-  "description": "Cloudflare worker TypeScript template",
+  "name": "github-star-counter",
+  "version": "1.0.1",
+  "description": "An API to count a GitHub user's total stars, working with shield.io.",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
@@ -11,16 +11,16 @@
     "test": "npm run test:clean && npm run transpile && mocha --require source-map-support/register --recursive transpiled/test",
     "transpile": "tsc --project ./test"
   },
-  "author": "fengkx <liangkx8237@gmail.com>",
+  "author": "idealclover <idealclover@163.com> & fengkx <liangkx8237@gmail.com>",
   "license": "MIT OR Apache-2.0",
   "devDependencies": {
     "@cloudflare/workers-types": "^1.0.1",
-    "@types/chai": "^4.1.7",
+    "@types/chai": "^4.2.11",
     "@types/mocha": "^5.2.7",
     "chai": "^4.2.0",
     "mocha": "^6.1.4",
     "prettier": "^1.18.2",
-    "rimraf": "^3.0.0",
+    "rimraf": "^3.0.2",
     "service-worker-mock": "^2.0.3",
     "source-map-loader": "^0.2.4",
     "source-map-support": "^0.5.12",
