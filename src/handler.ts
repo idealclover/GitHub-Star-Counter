@@ -18,7 +18,7 @@ export async function handleRequest(request: Request): Promise<Response> {
     const data = await resp.json()
     const pageCount = Math.ceil(data.public_repos / 100)
     const pages = []
-    for (let i = 0; i < pageCount; i++) {
+    for (let i = 1; i <= pageCount; i++) {
       pages.push(i)
     }
     const result: GitHub_Star_Fork = {
